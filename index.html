@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/vv-logo-design_731343-344.jpg?w=2000">
+    <script src="https://kit.fontawesome.com/2babab8003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="mtImgCircle.png"  class="logo"  > <!-- for logo at the header -->
+                <ul id="sidemenu"> 
+                    <li><a href="#header" class="same">Home</a></li>  <!--by this a href our list be clickable-->
+                    <li><a href="#about" class="same">About</a></li>
+                    <li><a href="#services" class="same">Services</a></li>
+                    <li><a href="#contact" class="same">Contact</a></li>
+                    <li><a href="#modes" onclick="dark_mode()" class="same">Theme</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Programmer</p>
+                <h3>Hi ,I'm <span>Vishal</span> Verma</h3>
+                <!-- <h4>A <span class="type" class="border" class="line-1 anim-typewriter">Web Developer & Programmer</span></h4> -->
+                <!-- <class="line-1 anim-typewriter">A Web Developer & Programmer</class> -->
+                <div class="container1">
+                    <div class="typed-out">  Web Developer & Programmer  </div></div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- About section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="avatar1.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" id="about">About Me</h1>
+                <p>
+                     Hii! I am Vishal Verma persuing my B.TECH degree in Computer Science. I am a dedicated, hardworking, and proactive coder with knowledge about Programming, Web Development and Team Management. I am currently looking for an opportunity to utilize my technical skills in a challenging working environment and become a valuable asset to the organization that I work for.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>        <!-- <p class="tab-links">Certifications</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('intenships')">Intenships</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab onee" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span></li>
+                        <li><span>Programmer</span></li>
+                        <li><span>Team Management</span></li>
+                        <li><span>Quick Learner</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents onee" id="education">
+                    <ul>
+                        <li><span>Persuing B.Tech from LNCTE</span></li>
+                        <li><span>9th-12th from YugDharma Public School </span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents onee" id="intenships">
+                    <ul>
+                        <li><span>AICTE virtual Intenship</span></li>
+                        <li><span>InfoByte Intenship</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents onee" id="languages">
+                    <ul>
+                        <li><span>Knowledge about C</span></li>
+                        <li><span>Working on C++</span></li>
+                        <li><span>JAVA SE</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>HTML,CSS and JAVASCIPT</span></li>
+                        <li><span>MySql</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>MERN Developer</h2>
+                <p>I am a Frontend Developer and I have knowledge about HTML,CSS,JAVASCIPT and REACT , so I am always searching for an opportunity that increases my Knowledge </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programmer</h2>
+                <p>I have also knowledge about some Programming languages and that help me to make Software and I also provid Software</p>
+            </div>
+        </div>
+        <button class="btn">Show More</button>
+    </div>
+</div>
+
+<!-----------cntact------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-brands fa-telegram"></i>v.verma7271@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7803087585</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vishal-verma-9b2973240/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/vishalverma379/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/V121212"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/VishalV37462998"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="My_resume_Copy.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">       <!--form that submit to google sheet-->
+                    <input type="text" name="Name" placeholder="Your Name" required>      <!--this name is used in Google sheet as aan atribute-->
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>    <!--this is for after completion the form-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Vishal Verma. All rights reserved</p>
+    </div>
+ </div>
+<script src="index.js"></script>
+</body>
+</html>
